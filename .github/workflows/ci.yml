@@ -37,9 +37,9 @@ jobs:
              pwd
              ls -la
              sed -n 5,10p package.json
-#       - name: Setup dependencies
-#         run: yarn
+      - name: Setup dependencies
+        run: yarn
 #       - run: yarn test
-#       - name: Run Lighthouse CLI Benchmark
-#         run: yarn ci:lighthouse
+      - name: Run Lighthouse CLI Benchmark
+        run: yarn run ci:lighthouse
         
