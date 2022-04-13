@@ -31,6 +31,9 @@ jobs:
         uses: actions/setup-node@v3.1.1
         with:
           node-version: ${{ matrix.node-version }}
+      - run: cd ci-study/
       - run: yarn
-      - run: yarn test
+#       - run: yarn test
+      - name: Lighthouse CLI Benchmark
+        run: yarn ci:lighthouse
         
