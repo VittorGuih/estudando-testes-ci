@@ -42,6 +42,6 @@ jobs:
 #       - run: yarn test
       - run: yarn add lighthouse
 #       - name: Run Lighthouse CLI Benchmark
-      - run: yarn tsc && vite build
+      - run: yarn vite build
       - run: lhci autorun
         
