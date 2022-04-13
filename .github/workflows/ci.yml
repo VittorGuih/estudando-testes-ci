@@ -42,6 +42,6 @@ jobs:
 #       - run: yarn test
       - run: yarn add lighthouse
 #       - name: Run Lighthouse CLI Benchmark
-      - run: npm run build
+      - run: yarn run build
       - run: lhci autorun
         
