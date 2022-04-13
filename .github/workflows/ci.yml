@@ -32,7 +32,10 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - name: Enter into ci-stydy folder
-        run: cd ci-study && pwd
+        run: cd ci-study
+             pwd
+             ls -la
+             sed -n 5,10p package.json
 #       - name: Setup dependencies
 #         run: yarn
 #       - run: yarn test
